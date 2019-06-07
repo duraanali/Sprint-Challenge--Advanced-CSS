@@ -1,4 +1,6 @@
 // Home Content
+@import "variables";
+@import "mixins";
 
 .home {
 
@@ -10,6 +12,18 @@
 
     p {
       padding:0 15px;
+    }
+
+    .header-img {
+      .roundsides (
+        10px;
+      ); 
+  
+
+      @media @phone {
+        height: 150px;
+        width: 100%;
+    }
     }
   
   }
@@ -24,6 +38,32 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+      @media @phone {
+        width: 330px;
+        margin: 20px 1%;
+        border-radius: 20px;
+        height: 300px;
+        margin-left: 20px;
+    }
+  
+    }
+
+    .sky {
+    @media @phone {
+      display: none;
+  }
+    }
+
+    .launch {
+      @media @phone {
+        display: none;
+    }
+      }
+
+      @media @phone {
+        display: flex;
+        flex-direction: column;
     }
   }
 
@@ -58,7 +98,37 @@
       }
 
       .btn {
+        .buttn(
+        #23293B;
+       20px;
+        20px;
+        9px;
+        8px;
+        6px;
+        1.7rem;
+        center;
+        #ffffff;
+        239px;
+        bold);
+
+        @media @phone {
+          margin-right: 8px;
+          padding-left: 18px;
+          padding-right: 20px;
+          padding-top: 20px;
+          padding-bottom: 20px;
       }
+    }
+
+    .btn:hover {
+      background-color: #ff2555;
+    }
+
+      @media @phone {
+        width: 100%;
+        padding: 20px;
+    }
+
     }
 
     .walk-img {
@@ -70,6 +140,19 @@
         height: auto;
         border-radius: 10px;
       }
+
+      @media @phone {
+        width: 320px;
+        margin: 20px 1%;
+        border-radius: 20px;
+        margin-left: 20px;
     }
+    }
+
+    @media @phone {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0px;
+  }
   }
 }// home

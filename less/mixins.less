@@ -1,1 +1,33 @@
 // Mixins Here
+
+.buttn (
+    
+@background-clr;
+@pad-right;
+@pad-left;
+@pad-top;
+@pad-bottom;
+@radius;
+@fontsize;
+@placing-text;
+@textcolor;
+@margin-space-right;
+@fontweight
+
+) {
+    background-color: @background-clr;
+    padding-left: @pad-left;
+    padding-right: @pad-right;
+    padding-top: @pad-top;
+    padding-bottom: @pad-bottom;
+    border-radius: @radius;
+    font-size: @fontsize;
+    text-align: @placing-text;
+    color: @textcolor;
+    margin-right: @margin-space-right;
+    font-weight: @fontweight
+}
+
+.roundsides (@rounded) {
+    border-radius: @rounded;
+}
